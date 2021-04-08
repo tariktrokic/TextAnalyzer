@@ -1,0 +1,27 @@
+.imageHeader {
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 70vh;
+}
+
+.title, .subTitle {
+    color: white;
+    font-size: 8rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.title:focus, .subTitle:focus {
+    outline: none;
+    text-shadow: var(--text-focus-shadow-light);
+}
+
+.subTitle {
+    font-size: 3rem;
+    font-weight: 400;
+}

@@ -1,0 +1,25 @@
+.singleTile {
+    display: flex;
+    font-size: 2rem;
+    min-height: 8vh;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tileTitle {
+    font-weight: 400;
+    max-width: 50%;
+}
+
+.tileValue {
+    color: var(--primary-color);
+    font-size: 3rem;
+    font-weight: 700;
+    max-width: 50%;
+    word-wrap: break-word;
+}
+
+.tileTitle:focus, .tileValue:focus {
+    outline: none;
+    text-shadow: var(--text-focus-shadow);
+}

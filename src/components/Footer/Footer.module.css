@@ -1,0 +1,45 @@
+.footerContainer {
+    align-items: center;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.footerText {
+    color: white;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.footerText:focus {
+    outline: none;
+    text-shadow: var(--text-focus-shadow-light);
+}
+
+.iconContainer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.iconContainer > * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconContainer > *:hover {
+    transform: translateY(-5px);
+}
+
+.iconContainer > *:focus {
+    outline: 2px solid black;
+}
+
+.iconContainer > *:not(:last-child) {
+    margin-right: 3rem;
+}

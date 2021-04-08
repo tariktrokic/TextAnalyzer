@@ -1,0 +1,81 @@
+.textAreaContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  max-width: var(--container-width);
+}
+
+
+@media only screen and (max-width: 100em) {
+  .textAreaContainer {
+    max-width: var(--container-width-medium);
+  }
+}
+
+@media only screen and (max-width: 87.5em) {
+  .textAreaContainer {
+    max-width: var(--container-width-small);
+  }
+}
+
+@media only screen and (max-width: 68.75em) {
+  .textAreaContainer {
+    max-width: var(--container-width-very-small);
+  }
+}
+
+.textArea {
+  border: 1px solid black;
+  background-color: var(--dark-gray);
+  border-radius: 10px;
+  font: inherit;
+  font-size: 2rem;
+  height: 30vh;
+  margin-top: 5rem;
+  padding: 1rem;
+  resize: none;
+  width: 100%;
+}
+
+@media only screen and (max-width: 50em) {
+  .textArea {
+    height: 40vh;
+  }
+}
+
+@media only screen and (max-width: 31.25em) {
+  .textArea {
+    height: 50vh;
+  }
+}
+
+.textAreaActionButton {
+  align-self: flex-start;
+  border: none;
+  background-color: var(--primary-color);
+  border-radius: 50px;
+  color: white;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 700;
+  margin-top: 2rem;
+  padding: 1rem 2.5rem;
+}
+
+@media only screen and (max-width: 50em) {
+  .textAreaActionButton {
+    font-size: 2rem;
+    padding: 2rem 5rem;
+  }
+}
+
+.textArea:focus, .textAreaActionButton:focus {
+  outline: none;
+  box-shadow: var(--box-focus-shadow);
+}
+
+.textAreaActionButton:hover {
+  background-color: var(--primary-color-dark);
+}
+

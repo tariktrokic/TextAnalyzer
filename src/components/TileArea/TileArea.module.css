@@ -1,0 +1,24 @@
+.tileAreaContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem auto 0 auto;
+    max-width: var(--container-width);
+}
+
+@media only screen and (max-width: 100em) {
+    .tileAreaContainer {
+      max-width: var(--container-width-medium);
+    }
+  }
+  
+  @media only screen and (max-width: 87.5em) {
+    .tileAreaContainer {
+      max-width: var(--container-width-small);
+    }
+  }
+  
+  @media only screen and (max-width: 68.75em) {
+    .tileAreaContainer {
+      max-width: var(--container-width-very-small);
+    }
+  }

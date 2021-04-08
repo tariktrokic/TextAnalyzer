@@ -1,0 +1,64 @@
+/* Import Nunito font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap'); 
+
+:root {
+  /*Colors*/
+  --primary-color: #00adfe;
+  --primary-color-dark: #0081be;
+  --dark-gray: #A9A9A9;
+  --light-gray: #F5F5F5;
+  /*Focus shadows*/
+  --box-focus-shadow: 0px 0px 10px black;
+  --text-focus-shadow: 0px 0px 2px black;
+  --text-focus-shadow-light: 0px 0px 3px white;
+  /*Container widths for different breakpoints*/
+  --container-width: 40%;
+  --container-width-medium: 60%;
+  --container-width-small: 70%;
+  --container-width-very-small: 90%;
+}
+
+*,
+*:after,
+*:before {
+  margin:0;
+  padding:0;
+  box-sizing: inherit;
+}
+
+html {
+  /* Make 1rem = 10px */
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+/* Make text bigger for huge screens */
+@media only screen and (min-width: 125em) {
+  html {
+    font-size: 80%;
+  }
+}
+
+/* Make text smaller on mobile devices */
+@media only screen and (max-width: 50em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media only screen and (max-width: 31.25em) {
+  html {
+    font-size: 40%;
+  }
+}
+
+body {
+  color: var(--primary-text);
+  font-family: 'Nunito', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  padding: .5rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
