@@ -14,4 +14,5 @@ A front end task I made to analyze text for specific details, including:
 ## Deployed app link: https://word--analyzer.herokuapp.com/
 
 ### Built with
-* React
+* React.js
+* Lots of love!
