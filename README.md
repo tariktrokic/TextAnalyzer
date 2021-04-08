@@ -1,6 +1,6 @@
 # TextAnalyzer
 
-A front end task I made to analyze text for specific details, including:
+A front end task made to analyze text for specific details, including:
 * Word count
 * Number of letters
 * Longest word
